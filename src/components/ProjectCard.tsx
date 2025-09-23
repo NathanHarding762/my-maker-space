@@ -14,7 +14,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, description, image, technologies, liveUrl, githubUrl }: ProjectCardProps) => {
   return (
-    <Card className="group bg-gradient-card border-border/50 hover:border-accent/50 transition-smooth shadow-card hover:shadow-hover overflow-hidden">
+    <Card className="group bg-gradient-card border-border/50 hover:border-accent/50 transition-smooth shadow-card hover:shadow-hover overflow-hidden flex flex-col h-full">
       <div className="relative overflow-hidden">
         <img 
           src={image} 
@@ -24,9 +24,9 @@ const ProjectCard = ({ title, description, image, technologies, liveUrl, githubU
         <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent opacity-0 group-hover:opacity-100 transition-smooth" />
       </div>
       
-      <CardContent className="p-6">
+      <CardContent className="p-6 flex flex-col flex-1">
         <h3 className="text-xl font-semibold mb-3 text-foreground">{title}</h3>
-        <p className="text-muted-foreground mb-4 line-clamp-3">{description}</p>
+        <p className="text-muted-foreground mb-4 line-clamp-3 flex-1">{description}</p>
         
         <div className="flex flex-wrap gap-2 mb-4">
           {technologies.map((tech) => (
@@ -40,7 +40,7 @@ const ProjectCard = ({ title, description, image, technologies, liveUrl, githubU
           ))}
         </div>
         
-        <div className="flex gap-3">
+        <div className="flex gap-3 mt-auto">
           {liveUrl && (
             <Button 
               variant="outline" 
