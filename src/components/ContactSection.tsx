@@ -15,19 +15,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "hello@yourname.dev",
-      href: "mailto:hello@yourname.dev"
+      value: "nathan.harding@jajags.com",
+      href: "mailto:nathan.harding@jajags.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "720-237-0794",
+      href: "tel:7202370794"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Westminster, CO",
       href: "#"
     }
   ];
