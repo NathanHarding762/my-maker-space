@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Mail } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
@@ -52,7 +52,6 @@ const HeroSection = () => {
           <div className="flex justify-center space-x-6">
             {[
               { Icon: Github, href: "#", label: "GitHub" },
-              { Icon: Linkedin, href: "#", label: "LinkedIn" },
               { Icon: Mail, href: "mailto:", label: "Email" },
             ].map(({ Icon, href, label }) => (
               <a
