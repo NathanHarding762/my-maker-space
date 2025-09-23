@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Code, Palette, Server, Smartphone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   const skills = {
@@ -15,25 +16,29 @@ const AboutSection = () => {
       title: "Frontend Development",
       icon: Code,
       skills: skills.frontend,
-      description: "Building responsive and interactive user interfaces"
+      description: "Building responsive and interactive user interfaces",
+      path: "/frontend"
     },
     {
       title: "Backend Development",
       icon: Server,
       skills: skills.backend,
-      description: "Creating robust server-side applications and APIs"
+      description: "Creating robust server-side applications and APIs",
+      path: "/backend"
     },
     {
       title: "Mobile Development",
       icon: Smartphone,
       skills: skills.mobile,
-      description: "Developing cross-platform mobile applications"
+      description: "Developing cross-platform mobile applications",
+      path: "/mobile"
     },
     {
       title: "Design & Tools",
       icon: Palette,
       skills: skills.tools,
-      description: "Using modern tools and design principles"
+      description: "Using modern tools and design principles",
+      path: "/design-tools"
     }
   ];
 
@@ -59,30 +64,32 @@ const AboutSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((category) => (
-            <Card key={category.title} className="bg-card border-border/50 hover:border-accent/50 transition-smooth shadow-card hover:shadow-hover">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="p-3 rounded-lg bg-primary/10 mr-3">
-                    <category.icon className="w-6 h-6 text-primary" />
+            <Link key={category.title} to={category.path}>
+              <Card className="bg-card border-border/50 hover:border-accent/50 transition-smooth shadow-card hover:shadow-hover cursor-pointer group">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="p-3 rounded-lg bg-primary/10 mr-3 group-hover:bg-primary/20 transition-smooth">
+                      <category.icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground group-hover:text-primary transition-smooth">{category.title}</h3>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground">{category.title}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">{category.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {category.skills.map((skill) => (
+                      <Badge 
+                        key={skill} 
+                        variant="secondary"
+                        className="bg-secondary/50 text-secondary-foreground text-xs"
+                      >
+                        {skill}
+                      </Badge>
+                    ))}
                   </div>
-                </div>
-                <p className="text-sm text-muted-foreground mb-4">{category.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill) => (
-                    <Badge 
-                      key={skill} 
-                      variant="secondary"
-                      className="bg-secondary/50 text-secondary-foreground text-xs"
-                    >
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>
