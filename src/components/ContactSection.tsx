@@ -28,7 +28,7 @@ const ContactSection = () => {
       icon: MapPin,
       title: "Location",
       value: "Westminster, CO",
-      href: "#"
+      href: "https://www.google.com/maps/place/Jefferson+Academy+Secondary+School/@39.9005706,-105.0753243,16.5z/data=!4m6!3m5!1s0x876b897a19de9c83:0xce0ef88a60ea7e84!8m2!3d39.900802!4d-105.075749!16s%2Fg%2F12cpgdx0n?entry=ttu&g_ep=EgoyMDI1MDkyMS4wIKXMDSoASAFQAw%3D%3D"
     }
   ];
 
@@ -69,76 +69,7 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="lg:col-span-2">
-            <Card className="bg-card border-border/50 shadow-card">
-              <CardContent className="p-8">
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                        Name
-                      </label>
-                      <Input
-                        id="name"
-                        type="text"
-                        placeholder="Your Name"
-                        className="bg-background border-border/50 focus:border-primary"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                        Email
-                      </label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="your.email@example.com"
-                        className="bg-background border-border/50 focus:border-primary"
-                        required
-                      />
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                      Subject
-                    </label>
-                    <Input
-                      id="subject"
-                      type="text"
-                      placeholder="Project Discussion"
-                      className="bg-background border-border/50 focus:border-primary"
-                      required
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                      Message
-                    </label>
-                    <Textarea
-                      id="message"
-                      placeholder="Tell me about your project..."
-                      rows={6}
-                      className="bg-background border-border/50 focus:border-primary resize-none"
-                      required
-                    />
-                  </div>
-                  
-                  <Button 
-                    type="submit" 
-                    size="lg" 
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow transition-bounce"
-                  >
-                    <Send className="w-4 h-4 mr-2" />
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-          </div>
+          
         </div>
       </div>
     </section>
