@@ -51,8 +51,8 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             {[
-              { Icon: Github, href: "#", label: "GitHub" },
-              { Icon: Mail, href: "mailto:", label: "Email" },
+              { Icon: Github, href: "https://github.com/NathanHarding762", label: "GitHub" },
+              { Icon: Mail, href: "mailto:nathan.harding@jajags.com", label: "Email" },
             ].map(({ Icon, href, label }) => (
               <a
                 key={label}
