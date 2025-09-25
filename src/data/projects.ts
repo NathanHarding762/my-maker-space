@@ -15,8 +15,26 @@ export const projects: Project[] = [
     image: "https://masterbundles.com/wp-content/uploads/2022/12/hotel-review_madterbundles-2-354.jpg",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "Node.js", "Python", "TensorFlow", "Flask + Flask-CORS", "NumPy", "Pandas"],
     category: ["frontend", "backend"], 
-    liveUrl: "#",
+    liveUrl: "http://10.200.67.161:8081/",
     githubUrl: "https://github.com/NathanHarding762/my-maker-space.git",
+  },
+  {
+    title: "Project 2 will go here",
+    description: "there actually isn't any project here its a secret.",
+    image: "https://img.buzzfeed.com/buzzfeed-static/static/2016-01/11/1/enhanced/webdr10/original-23605-1452494484-3.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto",
+    technologies: ["cool stuff", "Really cool stuff", "Super duper cool stuff"],
+    category: ["frontend", "design-tools"],
+    liveUrl: "#",
+    githubUrl : "#"
+  },
+  {
+    title: "Project 3 will go here",
+    description: "there actually isn't any project here its a funny prank that I added.",
+    image: "https://c02.purpledshub.com/uploads/sites/41/2020/05/GettyImages-991241038-79a8196.jpg?w=1029&webp=1",
+    technologies: ["computers", "electricity", "AI"],
+    category: ["mobile", "design-tools"],
+    liveUrl: "#",
+    githubUrl : "#"
   },
   
 ];

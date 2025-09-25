@@ -39,13 +39,15 @@ const HeroSection = () => {
             >
               View My Work
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-primary/30 hover:bg-primary/10 transition-smooth"
-            >
-              Download Resume
-            </Button>
+            <a href="/Fake resume.pdf" download>
+              <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="border-primary/30 hover:bg-primary/10 transition-smooth"
+              >
+                Download Resume
+              </Button>
+            </a>
           </div>
 
           {/* Social Links */}

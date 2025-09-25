@@ -51,7 +51,7 @@ const AboutSection = () => {
           </h2>
           <div className="max-w-3xl mx-auto">
             <p className="text-xl text-muted-foreground mb-6">
-              I'm a passionate full-stack developer with 5+ years of experience creating 
+              I'm a passionate full-stack developer with 0.25+ years of experience creating 
               digital solutions that make a difference. I love turning complex problems 
               into simple, beautiful, and intuitive designs.
             </p>
