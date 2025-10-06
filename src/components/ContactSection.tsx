@@ -5,11 +5,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 
 const ContactSection = () => {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted");
-  };
 
   const contactInfo = [
     {
@@ -17,12 +12,6 @@ const ContactSection = () => {
       title: "Email",
       value: "nathan.harding@jajags.com",
       href: "mailto:nathan.harding@jajags.com"
-    },
-    {
-      icon: Phone,
-      title: "Phone",
-      value: "720-237-0794",
-      href: "tel:7202370794"
     },
     {
       icon: MapPin,

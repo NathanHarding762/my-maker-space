@@ -15,7 +15,7 @@ export const projects: Project[] = [
     image: "https://masterbundles.com/wp-content/uploads/2022/12/hotel-review_madterbundles-2-354.jpg",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "Node.js", "Python", "TensorFlow", "Flask + Flask-CORS", "NumPy", "Pandas"],
     category: ["frontend", "backend"], 
-    liveUrl: "http://10.200.67.161:8081/",
+    liveUrl: "https://hotel-review-ai-frontend.onrender.com/",
     githubUrl: "https://github.com/NathanHarding762/my-maker-space.git",
   },
   {
