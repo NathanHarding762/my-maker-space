@@ -27,8 +27,7 @@ const HeroSection = () => {
             Full Stack Developer
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            I create beautiful, functional web applications that solve real-world problems. 
-            Passionate about clean code and exceptional user experiences.
+            Hi! My name is Nathan Harding. I am a Junior in high school at Jefferson Academy, but that doesn't mean I can't design websties! When I'm not designing websites, I am taking pictures or spending time with my friends.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
